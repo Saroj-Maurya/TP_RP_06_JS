@@ -29,6 +29,7 @@ function findArea(){
     console.log("Fahrenheit : "+ F);
  }
 
+ //convert fahrenheit to celsius
  var F = 50;
  function FtoC(){
     var C = (F-32)*5/9;
