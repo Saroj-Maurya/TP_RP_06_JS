@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var people = ["Gopal", "Mehboob", "Anuj", "Shekhar"];
+        console.log(people);
+
+        console.log(typeof (people));
+
+        var people1 = people[0];
+
+        console.log(people1);
+
+        console.log(people.length)
+
+        people.push("sheela");
+        console.log(people)
+
+
+
+        var netflixSeries = ["Shaitaan", "Court", "Game Over", "Bheed"]
+
+        console.log(netflixSeries);
+
+        console.log(typeof (netflixSeries));
+
+        console.log(netflixSeries.length)
+
+
+        // Methods of Array
+        netflixSeries.push("Gumraah");
+        console.log(netflixSeries)
+
+        netflixSeries.pop();
+        console.log(netflixSeries)
+
+        netflixSeries.shift();
+        console.log(netflixSeries)
+
+        netflixSeries.unshift("Happy");
+        console.log(netflixSeries)
+
+        var z = netflixSeries.copyWithin(0, 1);
+        console.log(z)
+
+        var s = netflixSeries.at(2);
+        console.log(s)
+
+        var b = netflixSeries[2];
+        console.log(b)
+
+        var x = netflixSeries.toString;
+        console.log(x)
+
+        var a = netflixSeries.join("*")
+        console.log(a)
+
+        var friends = ["sheela", "neha", "vinu", "shashi"]
+        var colors = ["red", "green", "Yellow", "blue"]
+        var c = friends.concat(colors);
+        console.log(c)
+
+        var a = [[1,2],[3,4],[5,6]]
+        var b = a.flat();
+        console.log(b)
+
+        var a = friends.splice(2,0, "preet","guru");
+        console.log(friends)
+
+        var friends2 = friends.slice(1);
+        console.log(friends2)
+
+
+
+    </script>
+</body>
+
+</html>
