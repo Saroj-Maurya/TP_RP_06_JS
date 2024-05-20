@@ -4,69 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h2>Todo</h2>
-
-        <input id="task"/>
-        
-        <button onclick="addTask()"> Add Task </button>
+    <div class="container">
+        <div class="social">
+            <h1> Social Share </h1>
+        </div>
+        <div class="icons">
+            <h4>Share this link via</h4>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="link">
+            <h4>Copy Link</h4>
+            <input type="text" id="link">
+        </div>
+        <div class="copy">
+            <button>Copy</button>
+        </div>
     </div>
 
-    <div>
-        <ol id="taskList">
-            
-        </ol>
- 
-    </div>
-    
-    <script>
-        // listId = 1
-        // Input => Task 1
-        // task = task1
-        // tasklist = <ol></ol>
-        // tasklist = <ol> 
-            // <li id="list-0"> Task 1 </li> 
-            // <button onclick="completeTask('list-0')">Completed</button>
-            //  </ol>
-
-        // id = 'list-0'
-        // task = <li id="list-0"> Task 1 </li> 
-        // 
-        var listID = 0;
-        var Completed = 0;
-        function addTask() {
-            var task = document.getElementById("task").value;
-            var taskList = document.getElementById("taskList");
-    
-
-            taskList.innerHTML += `<li id="list-${listID}">${task}</li>`
-            // taskList.innerHTML +=  '<li id="list">'+task+'</li>'
-
-            taskList.innerHTML += `<button name="complete" onclick="completeTask('list-${listID}')">Completed</button>`;
-
-            listID++;
-            // var li = document.createElement("li");
-            // li.innerText = task;
-            // taskList.appendChild(li);
-
-            var Completed = document.getElementsByName("complete");
-            //Completed.innerHTML +=`<textarea name="text" id="completed" cols="0" rows="0">Completed</textarea>`;
-            console.log(Completed++);
-        }
-
-        function completeTask(id) {
-           var task = document.getElementById(id);
-           task.style.textDecoration = 'line-through'; 
-        }
-
-        var count = 0;
-        function counter(){
-            // count = count + 1;
-            count += 1;
-            console.log("data");
-        }
-    </script>
 </body>
 </html>

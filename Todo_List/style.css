@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .social{
+    color: purple;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.container .icons h4{
+    font-size: 20px;
+}
+
+i{
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-twitter{
+    color:rgb(15, 191, 245);
+}
+ 
+.fa-instagram{
+    color:rgb(235, 15, 235);
+}
+
+.fa-whatsapp{
+    color: rgb(15, 221, 15);
+}
+
+.fa-linkedin{
+    color: rgb(35, 35, 236);
+}
+
+
+
+.container .link h4{
+    font-size: 20px;
+}
+
+.container .link input{
+    height: 40px;
+    width: 500px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.container .copy button{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(218, 19, 191);
+    height: 40px;
+    width: 500px;
+    border-radius: 10px;
+}
+
