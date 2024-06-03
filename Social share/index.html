@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Share</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid gray;
+      /* padding: 20px; */
+      border-radius: 10px;
+      width: 400px;
+      height: 400px;
+      background-color: rgb(174, 29, 203);
+      
+    }
+    .new_container > h1 {
+      color: blueviolet;
+      font-family: "Roboto", sans-serif;
+    }
+    .new_container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      background-color: white;
+      margin-left: 10px;
+      border: 1px solid gray;
+      border-radius: 10px;
+      padding: 10px;
+      /* box-shadow: 0px 5px 5px 10px rgb(202, 119, 217); */
+    }
+    .new_container > button {
+      border: 1px solid gray;
+      border-radius: 10px;
+      background-color: rgb(190, 76, 235);
+      height: 40px;
+      width: 100%;
+    }
+    .lin {
+      border: 1px solid gray;
+      border-radius: 10px;
+      padding: 10px;
+      /* width: 100%; */
+      height: 20px;
+      color: rgb(17, 52, 190);
+    }
+    .link > p {
+      font-family: "Roboto", sans-serif;
+    }
+    .lin > i{
+      font-family: "Roboto", sans-serif;
+    }
+    .media >p{
+      font-family: "Roboto", sans-serif;
+    }
+    .fa-brands {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+    .icons {
+      display: flex;
+      gap: 20px;
+    }
+    .icons > i {
+      border: 2px solid rgb(106, 106, 108);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+
+    }
+    .icons > i:hover{
+      border: 2px solid rgb(32, 25, 245);
+      scale: 1.12;
+      
+    }
+
+  </style>
+ 
+  <body>
+    <span><i class=" fa-brands"></i></span>
+    
+    <div class="container">
+      <div class="new_container">
+        <h1>Social Share</h1>
+        <div class="media"> 
+          <p>Share this link via</p>
+          <div class="icons">
+           
+            <i onclick="socialLink('www.fackbook.com/post/share')"
+              class="fa-brands fa-facebook hov"
+              style="color: rgb(10, 80, 192);"
+            ></i>
+            <i onclick="socialLink('www.twitter.com/post/share')"
+              style="color: blue; "
+              class="fa-brands fa-twitter"
+            ></i>
+            <i onclick="socialLink('www.intstargram.com/post/share')"
+              style="color: rgb(210, 46, 123); "
+              class="fa-brands fa-instagram"
+            ></i>
+            <i onclick="socialLink('www.whatsapp.com/post/share')"
+              style="color: rgb(26, 221, 58); "
+              class="fa-brands fa-whatsapp"
+            ></i>
+            <i onclick="socialLink('www.linkedin.com/post/share')"
+              style="color: rgb(0, 122, 181); "
+              class="fa-brands fa-linkedin"
+            ></i>
+          </div>
+        </div>
+        <div class="link">
+          <p>Copy link</p>
+
+          <div class="link_pin">
+            <p class="lin">
+              
+              
+              <span id="soLink">Select the media</span>
+            </p>
+          </div>
+        </div>
+        <button id="cpy" onclick="copy()">Copy</button>
+      </div>
+    </div>
+    <script>
+      var btn = document.getElementById('cpy')
+      var link= document.getElementById('soLink')
+      
+      function copy(){
+        btn.innerHTML = "Copied"
+      }
+      function socialLink(lin){
+        console.log(lin);
+        link.innerHTML = lin
+       }
+    </script>
+  </body>
+</html>

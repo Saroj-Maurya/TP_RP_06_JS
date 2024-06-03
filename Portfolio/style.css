@@ -1,0 +1,584 @@
+*body {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+  }
+  .nav-list li {
+    display: inline-block;
+    margin: 0px 12px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .nav-list li:hover {
+    color: rgb(50, 98, 255);
+  }
+  
+  .logo {
+    display: inline-block;
+    margin-right: 25%;
+  }
+  
+  .nabar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    padding: 5px 0px;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 7%; */
+    margin: 50px 150px;
+  }
+  .my-info {
+    /* margin: 10px; */
+    /* margin-top: -50px; */
+    text-align: left;
+  }
+  .my-info span {
+    font-size: 15px;
+    word-spacing: 3px;
+    color: rgb(53, 53, 53);
+  }
+  .my-info h4 {
+    font-size: 65px;
+    margin: 10px 0px;
+    color: rgb(24, 24, 24);
+  }
+  .my-info p {
+    font-size: 14px;
+    color: rgb(134, 133, 133);
+  }
+  .my-img {
+    padding-top: 100px;
+  }
+  .discover-btn {
+    padding: 13px 30px;
+    font-weight: 600;
+    color: RGB(255, 255, 255);
+    background-color: #739ee2;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+  }
+  
+  .discover-btn:hover {
+    box-shadow: 0px 18px 18px 0px #739ee269;
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 80px;
+  }
+  
+  .about-info {
+    margin: 0px 100px;
+    text-align: left;
+  }
+  .about-img {
+    padding: 20px;
+    padding-top: 100px;
+  }
+  
+  .about-info span {
+    font-size: 15px;
+    color: rgb(59, 59, 59);
+  }
+  
+  .about-info h4 {
+    font-size: 35px;
+    margin: 20px 0px;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+  }
+  .about-info p {
+    color: rgb(129, 128, 128);
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .view-btn {
+    padding: 13px 30px;
+    font-weight: 600;
+    color: RGB(255, 255, 255);
+    background-color: #739ee2;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+  }
+  
+  .view-btn:hover {
+    box-shadow: 0px 18px 18px 0px #739ee269;
+  }
+  .my-service {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 320px;
+    margin-top: 70px;
+  }
+  .my-service h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(27, 27, 27);
+    margin: 8px 0px;
+  }
+  
+  .my-service p {
+    color: rgb(110, 110, 110);
+    font-size: 15px;
+  }
+  
+  .service-section {
+    text-align: center;
+  }
+  .Services {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 55px;
+    margin: 70px 50px;
+  }
+  
+  .Services h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(27, 27, 27);
+  }
+  
+  .Services p {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(110, 110, 110);
+  }
+  .service-content ion-icon {
+    font-size: 38px;
+    color: rgb(27, 27, 27);
+    transition: color 0.3s;
+  }
+  .service-content h3 {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .service-content:hover h3,
+  .service-content:hover ion-icon {
+    color: #769ad4;
+  }
+  
+  .work-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px;
+    padding: 100px;
+    background-color: #6c9ff1;
+  }
+  
+  .work-content {
+    text-align: center;
+    color: white;
+  }
+  .work-content h1 {
+    font-size: 35px;
+    margin-bottom: -5px;
+  }
+  
+  .work-content span {
+    font-size: 14px;
+  }
+  
+  .my-project {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 320px;
+    margin-top: 25px;
+  }
+  
+  .my-project h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(27, 27, 27);
+    margin: 8px 0px;
+  }
+  
+  .my-project p {
+    color: rgb(110, 110, 110);
+    font-size: 15px;
+  }
+  
+  .project-list li {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 18px;
+    margin-top: 80px;
+    font-size: 13px;
+  }
+  
+  .project-list {
+    text-align: center;
+  }
+  .project-section {
+    text-align: center;
+  }
+  .project-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    margin: 60px 120px;
+  }
+  .p-content span {
+    font-size: 14px;
+    color: rgb(110, 110, 110);
+  }
+  
+  .p-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -4px;
+  }
+  
+  .feedback-headline {
+    display: inline-block;
+    text-align: center;
+    margin: 50px 320px;
+    margin-top: 25px;
+  }
+  .feedback-headline h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(27, 27, 27);
+    margin: 8px 0px;
+  }
+  .feedback-headline p {
+    color: rgb(110, 110, 110);
+    font-size: 13px;
+  }
+  
+  .feedback-container {
+    text-align: center;
+    margin: 200px 0px;
+  }
+  .user-feed {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 40px 90px;
+  }
+  .feedback-content {
+    font-size: 13px;
+    display: flex;
+    align-items: start;
+  }
+  .feedback-content img {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+  }
+  .feedback-content p {
+    text-align: left;
+    margin-left: 25px;
+    font-size: 14px;
+    color: rgb(90, 90, 90);
+  }
+  .Feedback-box {
+    margin: 10px 45px;
+    text-align: left;
+    cursor: pointer;
+  }
+  .Feedback-box h2 {
+    padding-left: 59px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -5px;
+    margin-bottom: -2px;
+  }
+  .Feedback-box span {
+    padding-left: 59px;
+    font-size: 14px;
+    color: rgb(90, 90, 90);
+  }
+  
+  .plan-heading {
+    display: inline-block;
+    text-align: center;
+    margin: 50px 350px;
+    margin-top: 25px;
+  }
+  
+  .plan-heading h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(27, 27, 27);
+    margin: 8px 0px;
+  }
+  .plan-heading p {
+    color: rgb(110, 110, 110);
+    font-size: 13px;
+  }
+  
+  .plans-section {
+    text-align: center;
+    margin: 200px 0px;
+  }
+  
+  .plan-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 20px 80px;
+  }
+  
+  .plan-info {
+    background-color: #f5eeee5e;
+    cursor: pointer;
+    padding: 30px 20px;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  .plan-info:hover {
+    transform: scale(1.05);
+    z-index: 2;
+    background-color: #6c9ff1;
+    color: white;
+  }
+  
+  .plan-info:hover h4,
+  .plan-info:hover p,
+  .plan-info:hover li {
+    color: white;
+  }
+  
+  .plan-info h4 {
+    font-size: 20px;
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+    margin-bottom: -2px;
+  }
+  .plan-info p {
+    font-size: 14px;
+    color: rgb(134, 134, 134);
+    padding-bottom: 40px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 5px;
+  }
+  
+  .plan-info li {
+    font-size: 15px;
+    color: rgb(134, 134, 134);
+    list-style-type: none;
+    border-bottom: 1px solid silver;
+    padding: 10px 0px;
+    align-items: center;
+  }
+  
+  .plan-amount {
+    font-size: 38px;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+    margin-top: 35px;
+  }
+  
+  .plan-info:hover button {
+    display: block; /* Ensure button is visible upon hover */
+    color: rgb(0, 0, 0);
+    /* overlay: none; */
+  }
+  
+  .plan-info:hover span {
+    display: none;
+  }
+  
+  .plan-info button {
+    padding: 12px 25px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    display: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .plan-list h1 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 15px 0px;
+    margin: 0px 77px;
+    background-color: #deeef19a;
+    border: 30px solid #c8d9df96;
+    border-radius: 1000px;
+  }
+  .plan-list:hover h1 {
+    background-color: transparent;
+  }
+  
+  .company-logo {
+    background-color: #8eb6f7;
+    padding: 70px 50px;
+    text-align: center;
+  }
+  
+  .c-image img {
+    margin: 0px 40px;
+    cursor: pointer;
+  }
+  
+  .footer-container {
+    background-color: RGB(4, 9, 30);
+    display: flex;
+    padding: 120px 130px;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 180px;
+  }
+  .footer-about {
+    color: white;
+    text-align: left;
+    margin: 0px 8px;
+    width: 100%;
+  }
+  .footer-about p {
+    color: RGB(119, 119, 119);
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .me{
+    width: 200rem;
+  }
+  .me h4 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .me a {
+    color: #6c9ff1;
+    text-decoration: none;
+  }
+  
+  .newsletter h4{
+    font-weight: 400;
+    font-size: 18px !important;
+  }
+  
+  .newsletter input {
+    padding: 15px 200px;
+    padding-left: 10px;
+    border: none;
+  }
+  
+  .feedback-email{
+    display: flex;
+  }
+  .feedback-email button{
+    background-color: #9695ff;
+    border: none;
+    color: white;
+    padding: 0px 20px;
+  }
+  
+  .follow h2{
+   font-size: 18px;
+   font-weight: 500;
+  }
+  
+  .a-link{
+    display: flex;
+  }
+  .a-link ion-icon{
+    color: white;
+    margin: 8px 8px;
+  }
+  
+  .bolg-container{
+    text-align: center;
+  }
+  .blog-head h1{
+    color: RGB(34, 34, 34);
+    font-size: 34px;
+    font-weight: 600;
+  }
+  .blog-head p{
+    color:RGB(119, 119, 119);
+    font-size: 14px;
+  }
+  .blog-head{
+    margin: 20px 260px;
+  }
+  
+  .blog-card{
+    display: flex;
+    justify-content: center;
+    margin: 90px 50px;
+  }
+  .card-content{
+    margin: 10px 20px;
+  }
+  .blog-profile{
+    text-align: left;
+    display: flex;
+    /* overflow: hidden; */
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom:15px;
+    border-bottom: 1px solid rgb(207, 205, 205);
+  }
+  .blog-img img{
+    object-fit: cover;
+    width: auto;
+    height: 250px;
+    transition: transform 0.3s; 
+  }
+  .blog-img{
+    position: relative; /* Ensure the div containing the image has a position */
+    overflow: hidden; /
+  }
+  .blog-img img:hover{
+    transform: scale(1.1);
+  }
+  
+  .blog-discription{
+    text-align: left;
+  }
+  .blog-discription h4{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .blog-discription p{
+    color: RGB(119, 119, 119);
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .blog-profile span {
+    color: RGB(34, 34, 34);
+    font-size: 14px;
+    margin-left: 9px;
+  }
+  
+  .like-comm{
+    margin-left: 110px;
+  }
+  
+  
+  .like-comm ion-icon{
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+  }
+  
+  
+  .like-comm span{
+    font-size: 14px;
+    color: gray;
+  }
