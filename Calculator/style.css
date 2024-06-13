@@ -14,7 +14,7 @@
     margin: 20px 30px;
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: chartreuse;
+    background-color: blue;
 }
 .btn_container {
     display: flex;
@@ -25,19 +25,19 @@
     height: 45px;
     width: 48px;
     margin: 1px;
-    background-color: aquamarine;
+    background-color: yellow;
     /* padding: 15px;
     font-size: 25px;
     text-align: center; */
 }
 h3{
-    border: 1px solid gray;
+    border: 1px black;
     padding: 5px;
     font-size: 15px;
     font-weight: lighter;
     width: 180px;
     height: 20px;
-    border: 2px solid gray;
+    border: 2px black;
     border-radius: 10px;
     background-color: white;
 }
