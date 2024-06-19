@@ -1,0 +1,24 @@
+*{
+    /* CSS Restting */
+    margin: 0;
+    padding: 0;
+}
+
+/* Tag Selector */
+h1, label, input{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Id selectors */
+
+#title{
+    color: blue;
+    text-align: center;
+}
+
+/* Class selectors */
+
+.form-input{
+    padding: 10px 20px;
+}
