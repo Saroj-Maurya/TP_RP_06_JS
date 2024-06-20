@@ -2,23 +2,65 @@
     /* CSS Restting */
     margin: 0;
     padding: 0;
-}
-
-/* Tag Selector */
-h1, label, input{
-
+    box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Id selectors */
+/* Tag Selector */
+/* h1, label, input{
 
-#title{
-    color: blue;
-    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    background-color: seagreen;
 }
 
 /* Class selectors */
 
-.form-input{
-    padding: 10px 20px;
+.wrap{
+    width: 420px;
+    background-color: purple;
+    color: #fff;
+}
+
+.wrap h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrap .form-input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.form-input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.form-input input::placeholder{
+    color: #fff;
+}
+
+.form-input i {
+    position: absolute;
+    right: 20px;
+    top: 90%;
+    transform: translateY(-90%);
+    font-size: 20px;
 }
