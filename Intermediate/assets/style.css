@@ -1,7 +1,7 @@
 *{
     /* CSS Restting */
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -13,11 +13,11 @@
 } */
 
 body{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 50vh;
-    background-color: seagreen;
+    background-color: rgb(243, 35, 198); */
 }
 
 /* Class selectors */
@@ -26,6 +26,8 @@ body{
     width: 420px;
     background-color: purple;
     color: #fff;
+    margin: 10%;
+    padding: 0;
 }
 
 .wrap h1{
@@ -63,4 +65,28 @@ body{
     top: 90%;
     transform: translateY(-90%);
     font-size: 20px;
+}
+
+.submit input{
+    background-color: rgb(212, 121, 240);
+    color: #fff;
+    text-align: center;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    padding: 20px 40px;
+    color: #fff;
+
+}
+
+.nav > div > ul{
+    display: flex;
+    gap: 20px;
 }
